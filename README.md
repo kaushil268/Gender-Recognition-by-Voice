@@ -5,6 +5,7 @@ This database was created to identify a voice as male or female, based upon acou
 -------------------------------------------------
 The following acoustic properties of each voice are measured and included within the CSV:
 
+----------------------------------------------------------------
 -meanfreq: mean frequency (in kHz)
 
 -sd: standard deviation of frequency
@@ -49,6 +50,7 @@ The following acoustic properties of each voice are measured and included within
 
 -label: male or female
 
+-------------------------------------------------------
 
 
 The best model achieves 99% accuracy on the test set. According to a CART model, it appears that looking at the mean fundamental frequency might be enough to accurately classify a voice. However, some male voices use a higher frequency, even though their resonance differs from female voices, and may be incorrectly classified as female. To the human ear, there is apparently more than simple frequency, that determines a voice's gender.
